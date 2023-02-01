@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Orbitron:wght@600&family=Press+Start+2P&family=Raleway:wght@300&family=Sacramento&display=swap");
+
+.gmnHeader {
+  height: 10vh;
+  width: 100%;
+}
+.gmnSection {
+  height: 7vh;
+  width: 100%;
+}
+
+.gmnMainClass {
+  width: 75%;
+  height: 70vh;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gmnMainClass p {
+  font-family: "Press Start 2p", sans-serif;
+}
+
+.gnmTop,
+.gnmBottom {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: 50%;
+  font-family: "Press Start 2p", sans-serif;
+  background-color: #eee;
+  color: #222;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  border: #222 solid 5px;
+}
+
+/* gnm top section */
+
+/* gnm top top section */
+
+.gnmTopTop {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.gnmTopTop p {
+  padding: 20px;
+  font-size: 18px;
+  color: #222;
+}
+.gnmAgainDiv {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.gnmAgainDiv P {
+  color: #222;
+}
+/* gnm top Bottom section */
+
+.gnmTopBottom {
+  height: 55%;
+  width: 100%;
+}
+.gnmH1 {
+  font-family: "Press Start 2p", sans-serif;
+  font-size: 35px;
+  text-align: center;
+}
+.gnmNumberP {
+  font-size: 50px;
+  background-color: #222;
+  color: #eee;
+}
+
+/* gnm positionning of guess and Hr  */
+
+.gnmHrAndNumber {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.gnmhr {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translatex(-50%);
+  border: #222 solid 5px;
+  color: #222;
+  width: 100%;
+}
+.gnmNumber {
+  background-color: #222;
+  padding: 15px;
+  position: absolute;
+  font-size: 30px;
+  color: #eee;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 40%);
+  z-index: 17;
+}
+
+.gnmBottom {
+  height: 50%;
+  position: relative;
+}
+.gnmBottom p {
+  color: #222;
+}
+
+.gnmGuess {
+  background-color: #eee;
+  border: solid 2px #222;
+  color: #222;
+  font-family: "Press Start 2p", sans-serif;
+  font-size: 25px;
+  width: 75px;
+  height: auto;
+  padding: 20px;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  transform: translateX(-50%);
+}
+
+.gnmCheck {
+  position: absolute;
+  bottom: 20%;
+  left: 25%;
+  transform: translateX(-50%);
+}
+
+/* gnm bottom right */
+
+.gnmBottom p {
+  font-size: 15px;
+}
+.gnmGuessIndicator {
+  position: absolute;
+  top: 30%;
+  left: 55%;
+}
+.gnmScore {
+  position: absolute;
+  top: 45%;
+  left: 55%;
+}
+.gnmHighscore {
+  position: absolute;
+  top: 55%;
+  left: 55%;
+}
+
+/* gnm buttons */
+
+.gnmBtn {
+  display: inline;
+  padding: 4px 8px 4px 8px;
+  background-color: #222;
+  color: #eee;
+  font-family: "Press Start 2p", sans-serif;
+  border: none;
+  font-size: 30px;
+}
+.gnmBtn:hover {
+  background-color: darkgrey;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .gnmTopTop p {
+    font-size: small;
+  }
+  .gnmH1 {
+    font-size: 25px;
+  }
+  .gnmCheck {
+    font-size: 25px;
+    bottom: 40%;
+  }
+}
+@media (max-width: 650px) {
+  .gnmProjetLinks {
+    width: 80%;
+    padding-top: 0px;
+    padding-right: 0px;
+  }
+  .gnmTopTop p {
+    font-size: xx-small;
+    padding-right: none;
+    text-align: right;
+  }
+  .gnmH1 {
+    font-size: 25px;
+  }
+  .gnmAgain {
+    font-size: 15px;
+  }
+
+  .gnmH1 {
+    font-size: 25px;
+  }
+  .gnmCheck {
+    font-size: 15px;
+    bottom: 40%;
+  }
+  .gnmGuessIndicator p,
+  .gnmScore p,
+  .gnmHighscore p {
+    font-size: xx-small;
+  }
+}
+
+@media (max-width: 500px) {
+  .gmnMainClass {
+    height: 50vh;
+  }
+  .gnmTopTop {
+    flex-direction: column;
+  }
+
+  .gnmProjetLinks {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 90%;
+  }
+  .gnmTopTop p {
+    font-size: xx-small;
+    padding-right: none;
+    text-align: right;
+  }
+  .gnmAgain {
+    font-size: 10px;
+  }
+  .gnmH1 {
+    font-size: 20px;
+  }
+  .gnmNumberP {
+    font-size: 35px;
+  }
+  .gnmCheck {
+    font-size: 15px;
+    bottom: 40%;
+  }
+  .gnmGuessIndicator p,
+  .gnmScore p,
+  .gnmHighscore p {
+    font-size: xx-small;
+  }
+  #input {
+    width: 70px;
+    padding: 10px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .gnmCheck {
+    font-size: 10px;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .gnmGuessIndicator {
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .gnmScore {
+    top: 82%;
+    left: 5%;
+  }
+  .gnmHighscore {
+    top: 91%;
+    left: 5%;
+  }
+  .footerDiv h2 {
+    font-size: 20px;
+  }
+}
